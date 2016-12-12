@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PerDiemAmountsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CityPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="State" Type="nvarchar" MaxLength="16" />
+    <Property Name="AirportCode" Type="nvarchar" MaxLength="8" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="YearPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_YearPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="YearPerDiem" Type="Self.YearPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="YearPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PerDiemAmountsModelStoreContainer">
+    <EntitySet Name="CityPerDiem" EntityType="Self.CityPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YearPerDiem" EntityType="Self.YearPerDiem" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_YearPerDiem_CityPerDiem" Association="Self.FK_YearPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="YearPerDiem" EntitySet="YearPerDiem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
