@@ -343,7 +343,7 @@ namespace ExcelTest2
 
         private void AddPerDiemFromStartOfMonth()
         {
-            int day, perDiem = 0;
+            int day;
             if (curDate.Substring(1, 1) != "-")
             {
                 Int32.TryParse(curDate.Substring(0, 2), out day);
@@ -354,23 +354,14 @@ namespace ExcelTest2
             }
             if(day != 1)//skip trips on the first of the month
             {
-                var city = (from c in db.CityPerDiems where curFromAirport == c.AirportCode select c).FirstOrDefault();
-                if(city != null)
-                {
-                    var cityPerDiemAmount = (from p in db.YearPerDiems where city.Id == p.CityId && year == p.Year select p).FirstOrDefault();
-                    perDiem += cityPerDiemAmount.Meals * (day - 1);
-                }
-                else
-                {
-                    perDiem += 55 * (day - 1);
-                }
+                int perDiem = GetPerDiemCityAmountWithMonth(curFromAirport) * (day - 1);
                 AddPerDiem(perDiem, day - 1);
             }
         }
 
         private void AddPerDiemIntraMonth(string airport, int returnFlight = 0)
         {
-            int day1 = 0, day2 = 0, perDiem = 0;
+            int day1 = 0, day2 = 0;
             if (returnFlight > 0)
             {
                 day2 = returnFlight;
@@ -382,16 +373,7 @@ namespace ExcelTest2
                 Int32.TryParse(prevDate.Substring(0, prevDateSubstringIndex), out day1);
                 Int32.TryParse(curDate.Substring(0, curDateSubstringIndex), out day2);
             }
-            var city = (from c in db.CityPerDiems where airport == c.AirportCode select c).FirstOrDefault();
-            if(city != null)
-            {
-                var cityPerDiemAmount = (from p in db.YearPerDiems where city.Id == p.CityId && year == p.Year select p).FirstOrDefault();
-                perDiem += cityPerDiemAmount.Meals * (day2 - day1);
-            }
-            else
-            {
-                perDiem += 55 * (day2 - day1);
-            }
+            int perDiem = GetPerDiemCityAmountWithMonth(airport) * (day2 - day1);
             AddPerDiem(perDiem, day2 - day1, returnFlight);
         }
 
@@ -399,7 +381,7 @@ namespace ExcelTest2
         {
             if (date != "")
             {
-                int day1 = 0, day2 = 0, perDiem = 0;
+                int day1 = 0, day2 = 0;
                 if (date.Substring(1, 1) != "-")
                 {
                     Int32.TryParse(date.Substring(0, 2), out day1);
@@ -409,16 +391,7 @@ namespace ExcelTest2
                     Int32.TryParse(date.Substring(0, 1), out day1);
                 }
                 day2 = monthDays[curMonth].days;
-                var city = (from c in db.CityPerDiems where airport == c.AirportCode select c).FirstOrDefault();
-                if(city != null)
-                {
-                    var cityPerDiemAmount = (from p in db.YearPerDiems where city.Id == p.CityId && year == p.Year select p).FirstOrDefault();
-                    perDiem += cityPerDiemAmount.Meals * (day2 - day1 + 1);//+1 for last day inclusive
-                }
-                else
-                {
-                    perDiem += 55 * (day2 - day1 + 1);
-                }
+                int perDiem = GetPerDiemCityAmountWithMonth(airport) * (day2 - day1 + 1);
                 AddPerDiem(perDiem, day2 - day1 + 1);
             }
         }
@@ -574,18 +547,117 @@ namespace ExcelTest2
 
         private void RemoveOnePerDiemDay()
         {
-            int perDiem = 0;
-            var city = (from c in db.CityPerDiems where prevFromAirport == c.AirportCode select c).FirstOrDefault();
-            if(city != null)
-            {
-                var cityPerDiemAmount = (from p in db.YearPerDiems where city.Id == p.CityId && year == p.Year select p).FirstOrDefault();
-                perDiem += cityPerDiemAmount.Meals * (1);
-            }
-            else
-            {
-                perDiem += 55 * (1);
-            }
+            int perDiem = GetPerDiemCityAmountWithMonth(prevFromAirport);
             AddPerDiem(-perDiem, -1);
+        }
+
+        private int GetPerDiemCityAmountWithMonth(string airport)
+        {
+            int amount = 55;
+            var city = (from c in db.CityPerDiems where airport == c.AirportCode select c).FirstOrDefault();
+            if (city != null)
+            {
+                #region switch to handle month perdiems
+                switch (curMonth)
+                {
+                    case "JAN":
+                        var janPerDiem = (from p in db.JanPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if(janPerDiem != null)
+                        {
+                            amount = janPerDiem.Meals;
+                        }
+                        break;
+                    case "FEB":
+                        var febPerDiem = (from p in db.FebPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (febPerDiem != null)
+                        {
+                            amount = febPerDiem.Meals;
+                        }
+                        break;
+                    case "MAR":
+                        var marPerDiem = (from p in db.MarPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (marPerDiem != null)
+                        {
+                            amount = marPerDiem.Meals;
+                        }
+                        break;
+                    case "APR":
+                        var aprPerDiem = (from p in db.AprPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (aprPerDiem != null)
+                        {
+                            amount = aprPerDiem.Meals;
+                        }
+                        break;
+                    case "MAY":
+                        var mayPerDiem = (from p in db.MayPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (mayPerDiem != null)
+                        {
+                            amount = mayPerDiem.Meals;
+                        }
+                        break;
+                    case "JUN":
+                        var junPerDiem = (from p in db.JunPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (junPerDiem != null)
+                        {
+                            amount = junPerDiem.Meals;
+                        }
+                        break;
+                    case "JUL":
+                        var julPerDiem = (from p in db.JulPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (julPerDiem != null)
+                        {
+                            amount = julPerDiem.Meals;
+                        }
+                        break;
+                    case "AUG":
+                        var augPerDiem = (from p in db.AugPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (augPerDiem != null)
+                        {
+                            amount = augPerDiem.Meals;
+                        }
+                        break;
+                    case "SEP":
+                        var sepPerDiem = (from p in db.SepPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (sepPerDiem != null)
+                        {
+                            amount = sepPerDiem.Meals;
+                        }
+                        break;
+                    case "OCT":
+                        var octPerDiem = (from p in db.OctPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (octPerDiem != null)
+                        {
+                            amount = octPerDiem.Meals;
+                        }
+                        break;
+                    case "NOV":
+                        var novPerDiem = (from p in db.NovPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (novPerDiem != null)
+                        {
+                            amount = novPerDiem.Meals;
+                        }
+                        break;
+                    case "DEC":
+                        var decPerDiem = (from p in db.DecPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                        if (decPerDiem != null)
+                        {
+                            amount = decPerDiem.Meals;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                #endregion
+                if(amount == 55)
+                {
+                    var defaultPerDiem = (from p in db.YearPerDiems where p.CityId == city.Id && p.Year == year select p).FirstOrDefault();
+                    if (defaultPerDiem != null)
+                    {
+                        amount = defaultPerDiem.Meals;
+                    }
+                }
+            }
+            return amount;
         }
     }
 }

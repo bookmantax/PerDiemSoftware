@@ -17,6 +17,18 @@ namespace ExcelTest2
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CityPerDiem()
         {
+            this.AprPerDiems = new HashSet<AprPerDiem>();
+            this.AugPerDiems = new HashSet<AugPerDiem>();
+            this.DecPerDiems = new HashSet<DecPerDiem>();
+            this.FebPerDiems = new HashSet<FebPerDiem>();
+            this.JanPerDiems = new HashSet<JanPerDiem>();
+            this.JulPerDiems = new HashSet<JulPerDiem>();
+            this.JunPerDiems = new HashSet<JunPerDiem>();
+            this.MarPerDiems = new HashSet<MarPerDiem>();
+            this.MayPerDiems = new HashSet<MayPerDiem>();
+            this.NovPerDiems = new HashSet<NovPerDiem>();
+            this.OctPerDiems = new HashSet<OctPerDiem>();
+            this.SepPerDiems = new HashSet<SepPerDiem>();
             this.YearPerDiems = new HashSet<YearPerDiem>();
         }
     
@@ -25,10 +37,31 @@ namespace ExcelTest2
         public string City { get; set; }
         public string State { get; set; }
         public string AirportCode { get; set; }
-        public int Meals { get; set; }
-        public int Lodging { get; set; }
-        public int Total { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<AprPerDiem> AprPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<AugPerDiem> AugPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DecPerDiem> DecPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<FebPerDiem> FebPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<JanPerDiem> JanPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<JulPerDiem> JulPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<JunPerDiem> JunPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MarPerDiem> MarPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MayPerDiem> MayPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NovPerDiem> NovPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OctPerDiem> OctPerDiems { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SepPerDiem> SepPerDiems { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<YearPerDiem> YearPerDiems { get; set; }
     }

@@ -5,8 +5,32 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="8d330084f5f54e1e890d7b79efdb9450" Name="Diagram1">
-        <EntityTypeShape EntityType="PerDiemAmountsModel.CityPerDiem" Width="1.5" PointX="0.75" PointY="1" />
-        <EntityTypeShape EntityType="PerDiemAmountsModel.YearPerDiem" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.AprPerDiem" Width="1.5" PointX="3" PointY="40.25" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.AugPerDiem" Width="1.5" PointX="3" PointY="27.75" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.CityPerDiem" Width="1.5" PointX="0.75" PointY="20.5" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.DecPerDiem" Width="1.5" PointX="3" PointY="18.375" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.FebPerDiem" Width="1.5" PointX="3" PointY="34" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.JanPerDiem" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.JulPerDiem" Width="1.5" PointX="3" PointY="24.625" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.JunPerDiem" Width="1.5" PointX="3" PointY="21.5" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.MarPerDiem" Width="1.5" PointX="3" PointY="30.875" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.MayPerDiem" Width="1.5" PointX="3" PointY="15.25" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.NovPerDiem" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.OctPerDiem" Width="1.5" PointX="3" PointY="37.125" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.SepPerDiem" Width="1.5" PointX="3" PointY="12.125" />
+        <EntityTypeShape EntityType="PerDiemAmountsModel.YearPerDiem" Width="1.5" PointX="3" PointY="9" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_AprPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_AugPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_DecPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_FebPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_JanPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_JulPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_JunPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_MarPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_MayPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_NovPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_OctPerDiem_CityPerDiem" />
+        <AssociationConnector Association="PerDiemAmountsModel.FK_SepPerDiem_CityPerDiem" />
         <AssociationConnector Association="PerDiemAmountsModel.FK_YearPerDiem_CityPerDiem" />
       </Diagram>
     </edmx:Diagrams>

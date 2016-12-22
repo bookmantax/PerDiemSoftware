@@ -25,7 +25,19 @@ namespace ExcelTest2
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<AprPerDiem> AprPerDiems { get; set; }
+        public virtual DbSet<AugPerDiem> AugPerDiems { get; set; }
         public virtual DbSet<CityPerDiem> CityPerDiems { get; set; }
+        public virtual DbSet<DecPerDiem> DecPerDiems { get; set; }
+        public virtual DbSet<FebPerDiem> FebPerDiems { get; set; }
+        public virtual DbSet<JanPerDiem> JanPerDiems { get; set; }
+        public virtual DbSet<JulPerDiem> JulPerDiems { get; set; }
+        public virtual DbSet<JunPerDiem> JunPerDiems { get; set; }
+        public virtual DbSet<MarPerDiem> MarPerDiems { get; set; }
+        public virtual DbSet<MayPerDiem> MayPerDiems { get; set; }
+        public virtual DbSet<NovPerDiem> NovPerDiems { get; set; }
+        public virtual DbSet<OctPerDiem> OctPerDiems { get; set; }
+        public virtual DbSet<SepPerDiem> SepPerDiems { get; set; }
         public virtual DbSet<YearPerDiem> YearPerDiems { get; set; }
     }
 }
