@@ -1,0 +1,12 @@
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\bin\Release\ExcelTest2.exe.config
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\bin\Release\ExcelTest2.exe
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\bin\Release\ExcelTest2.pdb
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\bin\Release\EntityFramework.dll
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\bin\Release\EntityFramework.xml
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\obj\Release\ExcelTest2.Form1.resources
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\obj\Release\ExcelTest2.Properties.Resources.resources
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\obj\Release\ExcelTest2.csproj.GenerateResource.Cache
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\obj\Release\ExcelTest2.exe
+C:\Users\Brandon\Documents\Visual Studio 2017\Projects\PerDiemSoftware\ExcelTest2\obj\Release\ExcelTest2.pdb

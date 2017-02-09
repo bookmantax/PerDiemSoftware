@@ -58,19 +58,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AprPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AugPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzureModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzureModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzureModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="CityPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DecPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="FebPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -79,19 +94,19 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="JanPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="JulPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="JunPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="MarPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="MayPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -110,18 +125,48 @@
     </Compile>
     <Compile Include="Month.cs" />
     <Compile Include="NovPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="OctPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PreparerNote.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="SepPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaxPreparer.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User1099.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserMiscDoc.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPerDiem.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserToPreparer.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserW2.cs">
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <Compile Include="YearPerDiem.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>AzureModel.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -139,6 +184,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="AzureModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AzureModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AzureModel.edmx.diagram">
+      <DependentUpon>AzureModel.edmx</DependentUpon>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -157,6 +209,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AzureModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzureModel.edmx</DependentUpon>
+      <LastGenOutput>AzureModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AzureModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzureModel.edmx</DependentUpon>
+      <LastGenOutput>AzureModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

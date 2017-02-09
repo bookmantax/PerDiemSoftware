@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PerDiemAmountsModelStoreContainer" CdmEntityContainer="PerDiemAmountsEntities">
+    <EntitySetMapping Name="AprPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.AprPerDiem">
+        <MappingFragment StoreEntitySet="AprPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AugPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.AugPerDiem">
+        <MappingFragment StoreEntitySet="AugPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CityPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.CityPerDiem">
+        <MappingFragment StoreEntitySet="CityPerDiem">
+          <ScalarProperty Name="AirportCode" ColumnName="AirportCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DecPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.DecPerDiem">
+        <MappingFragment StoreEntitySet="DecPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FebPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.FebPerDiem">
+        <MappingFragment StoreEntitySet="FebPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JanPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.JanPerDiem">
+        <MappingFragment StoreEntitySet="JanPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JulPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.JulPerDiem">
+        <MappingFragment StoreEntitySet="JulPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JunPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.JunPerDiem">
+        <MappingFragment StoreEntitySet="JunPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MarPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.MarPerDiem">
+        <MappingFragment StoreEntitySet="MarPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MayPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.MayPerDiem">
+        <MappingFragment StoreEntitySet="MayPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NovPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.NovPerDiem">
+        <MappingFragment StoreEntitySet="NovPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OctPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.OctPerDiem">
+        <MappingFragment StoreEntitySet="OctPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SepPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.SepPerDiem">
+        <MappingFragment StoreEntitySet="SepPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearPerDiems">
+      <EntityTypeMapping TypeName="PerDiemAmountsModel.YearPerDiem">
+        <MappingFragment StoreEntitySet="YearPerDiem">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Lodging" ColumnName="Lodging" />
+          <ScalarProperty Name="Meals" ColumnName="Meals" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

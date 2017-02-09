@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorkTripModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WorkTripEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AprPerDiems" EntityType="WorkTripModel.AprPerDiem" />
+    <EntitySet Name="AugPerDiems" EntityType="WorkTripModel.AugPerDiem" />
+    <EntitySet Name="CityPerDiems" EntityType="WorkTripModel.CityPerDiem" />
+    <EntitySet Name="DecPerDiems" EntityType="WorkTripModel.DecPerDiem" />
+    <EntitySet Name="FebPerDiems" EntityType="WorkTripModel.FebPerDiem" />
+    <EntitySet Name="JanPerDiems" EntityType="WorkTripModel.JanPerDiem" />
+    <EntitySet Name="JulPerDiems" EntityType="WorkTripModel.JulPerDiem" />
+    <EntitySet Name="JunPerDiems" EntityType="WorkTripModel.JunPerDiem" />
+    <EntitySet Name="MarPerDiems" EntityType="WorkTripModel.MarPerDiem" />
+    <EntitySet Name="MayPerDiems" EntityType="WorkTripModel.MayPerDiem" />
+    <EntitySet Name="NovPerDiems" EntityType="WorkTripModel.NovPerDiem" />
+    <EntitySet Name="OctPerDiems" EntityType="WorkTripModel.OctPerDiem" />
+    <EntitySet Name="PreparerNotes" EntityType="WorkTripModel.PreparerNote" />
+    <EntitySet Name="Roles" EntityType="WorkTripModel.Role" />
+    <EntitySet Name="SepPerDiems" EntityType="WorkTripModel.SepPerDiem" />
+    <EntitySet Name="Status" EntityType="WorkTripModel.Status" />
+    <EntitySet Name="TaxPreparers" EntityType="WorkTripModel.TaxPreparer" />
+    <EntitySet Name="Users" EntityType="WorkTripModel.User" />
+    <EntitySet Name="User1099" EntityType="WorkTripModel.User1099" />
+    <EntitySet Name="UserMiscDocs" EntityType="WorkTripModel.UserMiscDoc" />
+    <EntitySet Name="UserPerDiems" EntityType="WorkTripModel.UserPerDiem" />
+    <EntitySet Name="UserToPreparers" EntityType="WorkTripModel.UserToPreparer" />
+    <EntitySet Name="UserW2" EntityType="WorkTripModel.UserW2" />
+    <AssociationSet Name="FK_AprPerDiem_CityPerDiem" Association="WorkTripModel.FK_AprPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="AprPerDiem" EntitySet="AprPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AugPerDiem_CityPerDiem" Association="WorkTripModel.FK_AugPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="AugPerDiem" EntitySet="AugPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DecPerDiem_CityPerDiem" Association="WorkTripModel.FK_DecPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="DecPerDiem" EntitySet="DecPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FebPerDiem_CityPerDiem" Association="WorkTripModel.FK_FebPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="FebPerDiem" EntitySet="FebPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JanPerDiem_CityPerDiem" Association="WorkTripModel.FK_JanPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="JanPerDiem" EntitySet="JanPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JulPerDiem_CityPerDiem" Association="WorkTripModel.FK_JulPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="JulPerDiem" EntitySet="JulPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JunPerDiem_CityPerDiem" Association="WorkTripModel.FK_JunPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="JunPerDiem" EntitySet="JunPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MarPerDiem_CityPerDiem" Association="WorkTripModel.FK_MarPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="MarPerDiem" EntitySet="MarPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MayPerDiem_CityPerDiem" Association="WorkTripModel.FK_MayPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="MayPerDiem" EntitySet="MayPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NovPerDiem_CityPerDiem" Association="WorkTripModel.FK_NovPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="NovPerDiem" EntitySet="NovPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OctPerDiem_CityPerDiem" Association="WorkTripModel.FK_OctPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="OctPerDiem" EntitySet="OctPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SepPerDiem_CityPerDiem" Association="WorkTripModel.FK_SepPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="SepPerDiem" EntitySet="SepPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreparerNotes_TaxPreparer" Association="WorkTripModel.FK_PreparerNotes_TaxPreparer">
+      <End Role="TaxPreparer" EntitySet="TaxPreparers" />
+      <End Role="PreparerNote" EntitySet="PreparerNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreparerNotes_TaxPreparer1" Association="WorkTripModel.FK_PreparerNotes_TaxPreparer1">
+      <End Role="TaxPreparer" EntitySet="TaxPreparers" />
+      <End Role="PreparerNote" EntitySet="PreparerNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreparerNotes_User" Association="WorkTripModel.FK_PreparerNotes_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="PreparerNote" EntitySet="PreparerNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxPreparer_Role" Association="WorkTripModel.FK_TaxPreparer_Role">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="TaxPreparer" EntitySet="TaxPreparers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToPreparer_Status" Association="WorkTripModel.FK_UserToPreparer_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="UserToPreparer" EntitySet="UserToPreparers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToPreparer_TaxPreparer" Association="WorkTripModel.FK_UserToPreparer_TaxPreparer">
+      <End Role="TaxPreparer" EntitySet="TaxPreparers" />
+      <End Role="UserToPreparer" EntitySet="UserToPreparers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User1099_User" Association="WorkTripModel.FK_User1099_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="User1099" EntitySet="User1099" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMiscDocs_User" Association="WorkTripModel.FK_UserMiscDocs_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserMiscDoc" EntitySet="UserMiscDocs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPerDiem_User" Association="WorkTripModel.FK_UserPerDiem_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserPerDiem" EntitySet="UserPerDiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToPreparer_User" Association="WorkTripModel.FK_UserToPreparer_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserToPreparer" EntitySet="UserToPreparers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserW2_User" Association="WorkTripModel.FK_UserW2_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserW2" EntitySet="UserW2" />
+    </AssociationSet>
+    <EntitySet Name="YearPerDiems" EntityType="WorkTripModel.YearPerDiem" />
+    <AssociationSet Name="FK_YearPerDiem_CityPerDiem" Association="WorkTripModel.FK_YearPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiems" />
+      <End Role="YearPerDiem" EntitySet="YearPerDiems" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AprPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_AprPerDiem_CityPerDiem" FromRole="AprPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="AugPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_AugPerDiem_CityPerDiem" FromRole="AugPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="CityPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Country" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="AirportCode" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AprPerDiems" Relationship="WorkTripModel.FK_AprPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="AprPerDiem" />
+    <NavigationProperty Name="AugPerDiems" Relationship="WorkTripModel.FK_AugPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="AugPerDiem" />
+    <NavigationProperty Name="DecPerDiems" Relationship="WorkTripModel.FK_DecPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="DecPerDiem" />
+    <NavigationProperty Name="FebPerDiems" Relationship="WorkTripModel.FK_FebPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="FebPerDiem" />
+    <NavigationProperty Name="JanPerDiems" Relationship="WorkTripModel.FK_JanPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="JanPerDiem" />
+    <NavigationProperty Name="JulPerDiems" Relationship="WorkTripModel.FK_JulPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="JulPerDiem" />
+    <NavigationProperty Name="JunPerDiems" Relationship="WorkTripModel.FK_JunPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="JunPerDiem" />
+    <NavigationProperty Name="MarPerDiems" Relationship="WorkTripModel.FK_MarPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="MarPerDiem" />
+    <NavigationProperty Name="MayPerDiems" Relationship="WorkTripModel.FK_MayPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="MayPerDiem" />
+    <NavigationProperty Name="NovPerDiems" Relationship="WorkTripModel.FK_NovPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="NovPerDiem" />
+    <NavigationProperty Name="OctPerDiems" Relationship="WorkTripModel.FK_OctPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="OctPerDiem" />
+    <NavigationProperty Name="SepPerDiems" Relationship="WorkTripModel.FK_SepPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="SepPerDiem" />
+    <NavigationProperty Name="YearPerDiems" Relationship="WorkTripModel.FK_YearPerDiem_CityPerDiem" FromRole="CityPerDiem" ToRole="YearPerDiem" />
+  </EntityType>
+  <EntityType Name="DecPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_DecPerDiem_CityPerDiem" FromRole="DecPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="FebPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_FebPerDiem_CityPerDiem" FromRole="FebPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="JanPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_JanPerDiem_CityPerDiem" FromRole="JanPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="JulPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_JulPerDiem_CityPerDiem" FromRole="JulPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="JunPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_JunPerDiem_CityPerDiem" FromRole="JunPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="MarPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_MarPerDiem_CityPerDiem" FromRole="MarPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="MayPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_MayPerDiem_CityPerDiem" FromRole="MayPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="NovPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_NovPerDiem_CityPerDiem" FromRole="NovPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="OctPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_OctPerDiem_CityPerDiem" FromRole="OctPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="PreparerNote">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PreparerId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Notes" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="NoteCreatorId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TaxPreparer" Relationship="WorkTripModel.FK_PreparerNotes_TaxPreparer" FromRole="PreparerNote" ToRole="TaxPreparer" />
+    <NavigationProperty Name="TaxPreparer1" Relationship="WorkTripModel.FK_PreparerNotes_TaxPreparer1" FromRole="PreparerNote" ToRole="TaxPreparer" />
+    <NavigationProperty Name="User" Relationship="WorkTripModel.FK_PreparerNotes_User" FromRole="PreparerNote" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TaxPreparers" Relationship="WorkTripModel.FK_TaxPreparer_Role" FromRole="Role" ToRole="TaxPreparer" />
+  </EntityType>
+  <EntityType Name="SepPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_SepPerDiem_CityPerDiem" FromRole="SepPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserToPreparers" Relationship="WorkTripModel.FK_UserToPreparer_Status" FromRole="Status" ToRole="UserToPreparer" />
+  </EntityType>
+  <EntityType Name="TaxPreparer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PreparerNotes" Relationship="WorkTripModel.FK_PreparerNotes_TaxPreparer" FromRole="TaxPreparer" ToRole="PreparerNote" />
+    <NavigationProperty Name="PreparerNotes1" Relationship="WorkTripModel.FK_PreparerNotes_TaxPreparer1" FromRole="TaxPreparer" ToRole="PreparerNote" />
+    <NavigationProperty Name="Role" Relationship="WorkTripModel.FK_TaxPreparer_Role" FromRole="TaxPreparer" ToRole="Role" />
+    <NavigationProperty Name="UserToPreparers" Relationship="WorkTripModel.FK_UserToPreparer_TaxPreparer" FromRole="TaxPreparer" ToRole="UserToPreparer" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="VerificationCode" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Verified" Type="Boolean" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FacebookId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Airport" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PreparerNotes" Relationship="WorkTripModel.FK_PreparerNotes_User" FromRole="User" ToRole="PreparerNote" />
+    <NavigationProperty Name="User1099" Relationship="WorkTripModel.FK_User1099_User" FromRole="User" ToRole="User1099" />
+    <NavigationProperty Name="UserMiscDocs" Relationship="WorkTripModel.FK_UserMiscDocs_User" FromRole="User" ToRole="UserMiscDoc" />
+    <NavigationProperty Name="UserPerDiems" Relationship="WorkTripModel.FK_UserPerDiem_User" FromRole="User" ToRole="UserPerDiem" />
+    <NavigationProperty Name="UserToPreparers" Relationship="WorkTripModel.FK_UserToPreparer_User" FromRole="User" ToRole="UserToPreparer" />
+    <NavigationProperty Name="UserW2" Relationship="WorkTripModel.FK_UserW2_User" FromRole="User" ToRole="UserW2" />
+  </EntityType>
+  <EntityType Name="User1099">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="WorkTripModel.FK_User1099_User" FromRole="User1099" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserMiscDoc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="WorkTripModel.FK_UserMiscDocs_User" FromRole="UserMiscDoc" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Month" Type="String" MaxLength="24" FixedLength="false" Unicode="true" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Allowance" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="WorkTripModel.FK_UserPerDiem_User" FromRole="UserPerDiem" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserToPreparer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="TaxPreparerId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Status" Relationship="WorkTripModel.FK_UserToPreparer_Status" FromRole="UserToPreparer" ToRole="Status" />
+    <NavigationProperty Name="TaxPreparer" Relationship="WorkTripModel.FK_UserToPreparer_TaxPreparer" FromRole="UserToPreparer" ToRole="TaxPreparer" />
+    <NavigationProperty Name="User" Relationship="WorkTripModel.FK_UserToPreparer_User" FromRole="UserToPreparer" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserW2">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="WorkTripModel.FK_UserW2_User" FromRole="UserW2" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_AprPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.AprPerDiem" Role="AprPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AprPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AugPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.AugPerDiem" Role="AugPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AugPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DecPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.DecPerDiem" Role="DecPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DecPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FebPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.FebPerDiem" Role="FebPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FebPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JanPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.JanPerDiem" Role="JanPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JanPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JulPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.JulPerDiem" Role="JulPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JulPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JunPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.JunPerDiem" Role="JunPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JunPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MarPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.MarPerDiem" Role="MarPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MarPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MayPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.MayPerDiem" Role="MayPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MayPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NovPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.NovPerDiem" Role="NovPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NovPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OctPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.OctPerDiem" Role="OctPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OctPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SepPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.SepPerDiem" Role="SepPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SepPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreparerNotes_TaxPreparer">
+    <End Type="WorkTripModel.TaxPreparer" Role="TaxPreparer" Multiplicity="1" />
+    <End Type="WorkTripModel.PreparerNote" Role="PreparerNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxPreparer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreparerNote">
+        <PropertyRef Name="PreparerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreparerNotes_TaxPreparer1">
+    <End Type="WorkTripModel.TaxPreparer" Role="TaxPreparer" Multiplicity="1" />
+    <End Type="WorkTripModel.PreparerNote" Role="PreparerNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxPreparer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreparerNote">
+        <PropertyRef Name="NoteCreatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreparerNotes_User">
+    <End Type="WorkTripModel.User" Role="User" Multiplicity="1" />
+    <End Type="WorkTripModel.PreparerNote" Role="PreparerNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreparerNote">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxPreparer_Role">
+    <End Type="WorkTripModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="WorkTripModel.TaxPreparer" Role="TaxPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TaxPreparer">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToPreparer_Status">
+    <End Type="WorkTripModel.Status" Role="Status" Multiplicity="1" />
+    <End Type="WorkTripModel.UserToPreparer" Role="UserToPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserToPreparer">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToPreparer_TaxPreparer">
+    <End Type="WorkTripModel.TaxPreparer" Role="TaxPreparer" Multiplicity="1" />
+    <End Type="WorkTripModel.UserToPreparer" Role="UserToPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxPreparer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserToPreparer">
+        <PropertyRef Name="TaxPreparerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User1099_User">
+    <End Type="WorkTripModel.User" Role="User" Multiplicity="1" />
+    <End Type="WorkTripModel.User1099" Role="User1099" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User1099">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMiscDocs_User">
+    <End Type="WorkTripModel.User" Role="User" Multiplicity="1" />
+    <End Type="WorkTripModel.UserMiscDoc" Role="UserMiscDoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserMiscDoc">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPerDiem_User">
+    <End Type="WorkTripModel.User" Role="User" Multiplicity="1" />
+    <End Type="WorkTripModel.UserPerDiem" Role="UserPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserPerDiem">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToPreparer_User">
+    <End Type="WorkTripModel.User" Role="User" Multiplicity="1" />
+    <End Type="WorkTripModel.UserToPreparer" Role="UserToPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserToPreparer">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserW2_User">
+    <End Type="WorkTripModel.User" Role="User" Multiplicity="1" />
+    <End Type="WorkTripModel.UserW2" Role="UserW2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserW2">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="YearPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Meals" Type="Int32" Nullable="false" />
+    <Property Name="Lodging" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CityPerDiem" Relationship="WorkTripModel.FK_YearPerDiem_CityPerDiem" FromRole="YearPerDiem" ToRole="CityPerDiem" />
+  </EntityType>
+  <Association Name="FK_YearPerDiem_CityPerDiem">
+    <End Type="WorkTripModel.CityPerDiem" Role="CityPerDiem" Multiplicity="1" />
+    <End Type="WorkTripModel.YearPerDiem" Role="YearPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="YearPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

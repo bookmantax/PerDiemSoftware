@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="13.5" version="13.5" Modules="simple" RootPath="." Language="en" Id="{A92C7926-BBD3-440B-B06A-7E45AB27E2B3}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="WorkTrip"/>
+    <ROW Property="ProductCode" Value="1033:{27EC258E-B0C3-49CF-BFAE-A49087ECE87E} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="PerDiemSoftware"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{2B125739-6354-4A26-AABD-688D6C1CA4A0}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Debug_1_Dir" Directory_Parent="obj_Dir" DefaultDir="Debug"/>
+    <ROW Directory="Debug_Dir" Directory_Parent="bin_Dir" DefaultDir="Debug"/>
+    <ROW Directory="ExcelTest2_Dir" Directory_Parent="APPDIR" DefaultDir="EXCELT~1|ExcelTest2"/>
+    <ROW Directory="Properties_Dir" Directory_Parent="ExcelTest2_Dir" DefaultDir="PROPER~1|Properties"/>
+    <ROW Directory="Release_1_Dir" Directory_Parent="obj_Dir" DefaultDir="Release"/>
+    <ROW Directory="Release_Dir" Directory_Parent="bin_Dir" DefaultDir="Release"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TempPE_1_Dir" Directory_Parent="Release_1_Dir" DefaultDir="TempPE"/>
+    <ROW Directory="TempPE_Dir" Directory_Parent="Debug_1_Dir" DefaultDir="TempPE"/>
+    <ROW Directory="bin_Dir" Directory_Parent="ExcelTest2_Dir" DefaultDir="bin"/>
+    <ROW Directory="edmxResourcesToEmbed_1_Dir" Directory_Parent="Release_1_Dir" DefaultDir="EDMXRE~1|edmxResourcesToEmbed"/>
+    <ROW Directory="edmxResourcesToEmbed_Dir" Directory_Parent="Debug_1_Dir" DefaultDir="EDMXRE~1|edmxResourcesToEmbed"/>
+    <ROW Directory="obj_Dir" Directory_Parent="ExcelTest2_Dir" DefaultDir="obj"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="App.config" ComponentId="{6E51529C-6EFF-45F6-B73A-8DB530799ABF}" Directory_="ExcelTest2_Dir" Attributes="0" KeyPath="App.config" Type="0"/>
+    <ROW Component="AssemblyInfo.cs" ComponentId="{8EC8FB6A-00E8-4BEB-81FD-A6AE06313B93}" Directory_="Properties_Dir" Attributes="0" KeyPath="AssemblyInfo.cs" Type="0"/>
+    <ROW Component="AzureModel.Context.cs.dll" ComponentId="{E92B3B70-6A77-42FE-9570-ED195D3460AE}" Directory_="TempPE_Dir" Attributes="0" KeyPath="AzureModel.Context.cs.dll"/>
+    <ROW Component="AzureModel.Context.cs.dll_1" ComponentId="{4EC83C95-E37A-432F-9A15-918E126DF22A}" Directory_="TempPE_1_Dir" Attributes="0" KeyPath="AzureModel.Context.cs.dll_1"/>
+    <ROW Component="AzureModel.Designer.cs.dll" ComponentId="{A51B2019-C502-475F-80A0-C59D9C814379}" Directory_="TempPE_Dir" Attributes="0" KeyPath="AzureModel.Designer.cs.dll"/>
+    <ROW Component="AzureModel.Designer.cs.dll_1" ComponentId="{C3B21B3F-DEC0-478D-915B-115349956AA2}" Directory_="TempPE_1_Dir" Attributes="0" KeyPath="AzureModel.Designer.cs.dll_1"/>
+    <ROW Component="AzureModel.cs.dll" ComponentId="{1A8633CF-4BE6-4123-B5D0-32754D65E622}" Directory_="TempPE_Dir" Attributes="0" KeyPath="AzureModel.cs.dll"/>
+    <ROW Component="AzureModel.cs.dll_1" ComponentId="{0550573F-C1F1-4855-8321-B0D4E974A830}" Directory_="TempPE_1_Dir" Attributes="0" KeyPath="AzureModel.cs.dll_1"/>
+    <ROW Component="AzureModel.csdl" ComponentId="{5763E1F3-77B6-48D9-AF31-8B7A8B221FB9}" Directory_="edmxResourcesToEmbed_Dir" Attributes="0" KeyPath="AzureModel.csdl" Type="0"/>
+    <ROW Component="AzureModel.csdl_1" ComponentId="{36356F1C-FE18-49B0-8E5A-40C1F0687799}" Directory_="edmxResourcesToEmbed_1_Dir" Attributes="0" KeyPath="AzureModel.csdl_1" Type="0"/>
+    <ROW Component="CoreCompileInputs.cache" ComponentId="{B454A381-B817-49D0-91C5-EE4C2039F692}" Directory_="Debug_1_Dir" Attributes="0" KeyPath="CoreCompileInputs.cache" Type="0"/>
+    <ROW Component="CoreCompileInputs.cache_1" ComponentId="{B105AF69-CFBC-4DCC-BCCE-C0990896C837}" Directory_="Release_1_Dir" Attributes="0" KeyPath="CoreCompileInputs.cache_1" Type="0"/>
+    <ROW Component="EntityFramework.SqlServer.dll" ComponentId="{33B3A30E-C0CF-4D48-8253-5D5913F62739}" Directory_="Debug_Dir" Attributes="0" KeyPath="EntityFramework.SqlServer.dll"/>
+    <ROW Component="EntityFramework.SqlServer.dll_1" ComponentId="{7D01D9EB-9FB0-4D5B-8E48-F135F4CB8D44}" Directory_="Release_Dir" Attributes="0" KeyPath="EntityFramework.SqlServer.dll_1"/>
+    <ROW Component="EntityFramework.SqlServer.xml" ComponentId="{F7A129D8-2738-4261-AFC1-99F7DE2E64D4}" Directory_="Debug_Dir" Attributes="0" KeyPath="EntityFramework.SqlServer.xml" Type="0"/>
+    <ROW Component="EntityFramework.SqlServer.xml_1" ComponentId="{8B50D41C-B19F-4AF6-B713-887AFDE5EA75}" Directory_="Release_Dir" Attributes="0" KeyPath="EntityFramework.SqlServer.xml_1" Type="0"/>
+    <ROW Component="EntityFramework.dll" ComponentId="{A261B5EB-D921-4657-A260-D68C1096AA4F}" Directory_="Debug_Dir" Attributes="0" KeyPath="EntityFramework.dll"/>
+    <ROW Component="EntityFramework.dll_1" ComponentId="{71E49891-A3E9-4BDF-8441-0784D0E45772}" Directory_="Release_Dir" Attributes="0" KeyPath="EntityFramework.dll_1"/>
+    <ROW Component="ExcelTest2.exe" ComponentId="{DD0BEC0B-C60D-4E4C-BC32-102B572B2BBE}" Directory_="Debug_Dir" Attributes="0" KeyPath="ExcelTest2.exe"/>
+    <ROW Component="ExcelTest2.exe_1" ComponentId="{278F7062-2FCC-4C67-AA2E-7DC75A9A8EBB}" Directory_="Release_Dir" Attributes="0" KeyPath="ExcelTest2.exe_1"/>
+    <ROW Component="ExcelTest2.exe_2" ComponentId="{28E843A6-5E70-4669-B56A-DCEC97A600D2}" Directory_="Debug_1_Dir" Attributes="0" KeyPath="ExcelTest2.exe_2"/>
+    <ROW Component="ExcelTest2.exe_3" ComponentId="{83F02A8C-41A3-40B2-A5BC-AA4802E00F6E}" Directory_="Release_1_Dir" Attributes="0" KeyPath="ExcelTest2.exe_3"/>
+    <ROW Component="ExcelTest2.vshost.exe" ComponentId="{4BEDA5E4-A0A0-4BF4-8C49-901C0800A7E1}" Directory_="Debug_Dir" Attributes="0" KeyPath="ExcelTest2.vshost.exe"/>
+    <ROW Component="Model1.Context.cs.dll" ComponentId="{0F55C90D-B05A-4287-9ADB-A96EE72AF837}" Directory_="TempPE_Dir" Attributes="0" KeyPath="Model1.Context.cs.dll"/>
+    <ROW Component="Model1.Context.cs.dll_1" ComponentId="{2CF57831-4CD8-4A58-9905-4ADE8EF738D1}" Directory_="TempPE_1_Dir" Attributes="0" KeyPath="Model1.Context.cs.dll_1"/>
+    <ROW Component="Model1.Designer.cs.dll" ComponentId="{371C3FB9-3425-48C9-9E79-186BFF0F8847}" Directory_="TempPE_Dir" Attributes="0" KeyPath="Model1.Designer.cs.dll"/>
+    <ROW Component="Model1.Designer.cs.dll_1" ComponentId="{299F4D6B-AB68-4D65-B855-4D0B83FDDD5D}" Directory_="TempPE_1_Dir" Attributes="0" KeyPath="Model1.Designer.cs.dll_1"/>
+    <ROW Component="Model1.cs.dll" ComponentId="{A7A98D50-4F88-4DC4-8298-253BBC9500CC}" Directory_="TempPE_Dir" Attributes="0" KeyPath="Model1.cs.dll"/>
+    <ROW Component="Model1.cs.dll_1" ComponentId="{72CFD409-9F5A-497C-A950-807A74005FE2}" Directory_="TempPE_1_Dir" Attributes="0" KeyPath="Model1.cs.dll_1"/>
+    <ROW Component="ProductInformation" ComponentId="{9BAFD8CA-3205-4670-9118-248C8A66AF86}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="App.config AssemblyInfo.cs AzureModel.Context.cs.dll AzureModel.Context.cs.dll_1 AzureModel.Designer.cs.dll AzureModel.Designer.cs.dll_1 AzureModel.cs.dll AzureModel.cs.dll_1 AzureModel.csdl AzureModel.csdl_1 CoreCompileInputs.cache CoreCompileInputs.cache_1 EntityFramework.SqlServer.dll EntityFramework.SqlServer.dll_1 EntityFramework.SqlServer.xml EntityFramework.SqlServer.xml_1 EntityFramework.dll EntityFramework.dll_1 ExcelTest2.exe ExcelTest2.exe_1 ExcelTest2.exe_2 ExcelTest2.exe_3 ExcelTest2.vshost.exe Model1.Context.cs.dll Model1.Context.cs.dll_1 Model1.Designer.cs.dll Model1.Designer.cs.dll_1 Model1.cs.dll Model1.cs.dll_1 ProductInformation"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="App.config" Component_="App.config" FileName="APP~1.CON|App.config" Attributes="0" SourcePath="..\ExcelTest2\App.config" SelfReg="false" NextFile="AprPerDiem.cs"/>
+    <ROW File="AprPerDiem.cs" Component_="App.config" FileName="APRPER~1.CS|AprPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\AprPerDiem.cs" SelfReg="false" NextFile="AugPerDiem.cs"/>
+    <ROW File="AssemblyInfo.cs" Component_="AssemblyInfo.cs" FileName="ASSEMB~1.CS|AssemblyInfo.cs" Attributes="0" SourcePath="..\ExcelTest2\Properties\AssemblyInfo.cs" SelfReg="false" NextFile="Resources.Designer.cs"/>
+    <ROW File="AugPerDiem.cs" Component_="App.config" FileName="AUGPER~1.CS|AugPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\AugPerDiem.cs" SelfReg="false" NextFile="AzureModel.Context.cs"/>
+    <ROW File="AzureModel.Context.cs" Component_="App.config" FileName="AZUREM~1.CS|AzureModel.Context.cs" Attributes="0" SourcePath="..\ExcelTest2\AzureModel.Context.cs" SelfReg="false" NextFile="AzureModel.Context.tt"/>
+    <ROW File="AzureModel.Context.cs.dll" Component_="AzureModel.Context.cs.dll" FileName="AZUREM~1.DLL|AzureModel.Context.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TempPE\AzureModel.Context.cs.dll" SelfReg="false" NextFile="AzureModel.cs.dll"/>
+    <ROW File="AzureModel.Context.cs.dll_1" Component_="AzureModel.Context.cs.dll_1" FileName="AZUREM~1.DLL|AzureModel.Context.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TempPE\AzureModel.Context.cs.dll" SelfReg="false" NextFile="AzureModel.cs.dll_1"/>
+    <ROW File="AzureModel.Context.tt" Component_="App.config" FileName="AZUREM~1.TT|AzureModel.Context.tt" Attributes="0" SourcePath="..\ExcelTest2\AzureModel.Context.tt" SelfReg="false" NextFile="AzureModel.cs"/>
+    <ROW File="AzureModel.Designer.cs" Component_="App.config" FileName="AZUREM~3.CS|AzureModel.Designer.cs" Attributes="0" SourcePath="..\ExcelTest2\AzureModel.Designer.cs" SelfReg="false" NextFile="AzureModel.edmx"/>
+    <ROW File="AzureModel.Designer.cs.dll" Component_="AzureModel.Designer.cs.dll" FileName="AZUREM~3.DLL|AzureModel.Designer.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TempPE\AzureModel.Designer.cs.dll" SelfReg="false" NextFile="Model1.Context.cs.dll"/>
+    <ROW File="AzureModel.Designer.cs.dll_1" Component_="AzureModel.Designer.cs.dll_1" FileName="AZUREM~3.DLL|AzureModel.Designer.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TempPE\AzureModel.Designer.cs.dll" SelfReg="false" NextFile="Model1.Context.cs.dll_1"/>
+    <ROW File="AzureModel.cs" Component_="App.config" FileName="AZUREM~2.CS|AzureModel.cs" Attributes="0" SourcePath="..\ExcelTest2\AzureModel.cs" SelfReg="false" NextFile="AzureModel.Designer.cs"/>
+    <ROW File="AzureModel.cs.dll" Component_="AzureModel.cs.dll" FileName="AZUREM~2.DLL|AzureModel.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TempPE\AzureModel.cs.dll" SelfReg="false" NextFile="AzureModel.Designer.cs.dll"/>
+    <ROW File="AzureModel.cs.dll_1" Component_="AzureModel.cs.dll_1" FileName="AZUREM~2.DLL|AzureModel.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TempPE\AzureModel.cs.dll" SelfReg="false" NextFile="AzureModel.Designer.cs.dll_1"/>
+    <ROW File="AzureModel.csdl" Component_="AzureModel.csdl" FileName="AZUREM~1.CSD|AzureModel.csdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\edmxResourcesToEmbed\AzureModel.csdl" SelfReg="false" NextFile="AzureModel.msl"/>
+    <ROW File="AzureModel.csdl_1" Component_="AzureModel.csdl_1" FileName="AZUREM~1.CSD|AzureModel.csdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\edmxResourcesToEmbed\AzureModel.csdl" SelfReg="false" NextFile="AzureModel.msl_1"/>
+    <ROW File="AzureModel.edmx" Component_="App.config" FileName="AZUREM~1.EDM|AzureModel.edmx" Attributes="0" SourcePath="..\ExcelTest2\AzureModel.edmx" SelfReg="false" NextFile="AzureModel.edmx.diagram"/>
+    <ROW File="AzureModel.edmx.diagram" Component_="App.config" FileName="AZUREM~1.DIA|AzureModel.edmx.diagram" Attributes="0" SourcePath="..\ExcelTest2\AzureModel.edmx.diagram" SelfReg="false" NextFile="AzureModel.tt"/>
+    <ROW File="AzureModel.msl" Component_="AzureModel.csdl" FileName="AZUREM~1.MSL|AzureModel.msl" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\edmxResourcesToEmbed\AzureModel.msl" SelfReg="false" NextFile="AzureModel.ssdl"/>
+    <ROW File="AzureModel.msl_1" Component_="AzureModel.csdl_1" FileName="AZUREM~1.MSL|AzureModel.msl" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\edmxResourcesToEmbed\AzureModel.msl" SelfReg="false" NextFile="AzureModel.ssdl_1"/>
+    <ROW File="AzureModel.ssdl" Component_="AzureModel.csdl" FileName="AZUREM~1.SSD|AzureModel.ssdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\edmxResourcesToEmbed\AzureModel.ssdl" SelfReg="false" NextFile="Model1.csdl"/>
+    <ROW File="AzureModel.ssdl_1" Component_="AzureModel.csdl_1" FileName="AZUREM~1.SSD|AzureModel.ssdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\edmxResourcesToEmbed\AzureModel.ssdl" SelfReg="false" NextFile="Model1.csdl_1"/>
+    <ROW File="AzureModel.tt" Component_="App.config" FileName="AZUREM~2.TT|AzureModel.tt" Attributes="0" SourcePath="..\ExcelTest2\AzureModel.tt" SelfReg="false" NextFile="EntityFramework.dll"/>
+    <ROW File="CityPerDiem.cs" Component_="App.config" FileName="CITYPE~1.CS|CityPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\CityPerDiem.cs" SelfReg="false" NextFile="DecPerDiem.cs"/>
+    <ROW File="CoreCompileInputs.cache" Component_="CoreCompileInputs.cache" FileName="CORECO~1.CAC|CoreCompileInputs.cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\CoreCompileInputs.cache" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferences.cache"/>
+    <ROW File="CoreCompileInputs.cache_1" Component_="CoreCompileInputs.cache_1" FileName="CORECO~1.CAC|CoreCompileInputs.cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\CoreCompileInputs.cache" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferences.cache_1"/>
+    <ROW File="DecPerDiem.cs" Component_="App.config" FileName="DECPER~1.CS|DecPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\DecPerDiem.cs" SelfReg="false" NextFile="ExcelTest2.csproj"/>
+    <ROW File="DesignTimeResolveAssemblyReferences.cache" Component_="CoreCompileInputs.cache" FileName="DESIGN~1.CAC|DesignTimeResolveAssemblyReferences.cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\DesignTimeResolveAssemblyReferences.cache" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferencesInput.cache"/>
+    <ROW File="DesignTimeResolveAssemblyReferences.cache_1" Component_="CoreCompileInputs.cache_1" FileName="DESIGN~1.CAC|DesignTimeResolveAssemblyReferences.cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\DesignTimeResolveAssemblyReferences.cache" SelfReg="false" NextFile="DesignTimeResolveAssemblyReferencesInput.cache_1"/>
+    <ROW File="DesignTimeResolveAssemblyReferencesInput.cache" Component_="CoreCompileInputs.cache" FileName="DESIGN~2.CAC|DesignTimeResolveAssemblyReferencesInput.cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" SelfReg="false" NextFile="AzureModel.csdl"/>
+    <ROW File="DesignTimeResolveAssemblyReferencesInput.cache_1" Component_="CoreCompileInputs.cache_1" FileName="DESIGN~2.CAC|DesignTimeResolveAssemblyReferencesInput.cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" SelfReg="false" NextFile="AzureModel.csdl_1"/>
+    <ROW File="EntityFramework.SqlServer.dll" Component_="EntityFramework.SqlServer.dll" FileName="ENTITY~2.DLL|EntityFramework.SqlServer.dll" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\EntityFramework.SqlServer.dll" SelfReg="false" NextFile="EntityFramework.SqlServer.xml"/>
+    <ROW File="EntityFramework.SqlServer.dll_1" Component_="EntityFramework.SqlServer.dll_1" FileName="ENTITY~2.DLL|EntityFramework.SqlServer.dll" Attributes="0" SourcePath="..\ExcelTest2\bin\Release\EntityFramework.SqlServer.dll" SelfReg="false" NextFile="EntityFramework.SqlServer.xml_1"/>
+    <ROW File="EntityFramework.SqlServer.xml" Component_="EntityFramework.SqlServer.xml" FileName="ENTITY~1.XML|EntityFramework.SqlServer.xml" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\EntityFramework.SqlServer.xml" SelfReg="false" NextFile="EntityFramework.xml"/>
+    <ROW File="EntityFramework.SqlServer.xml_1" Component_="EntityFramework.SqlServer.xml_1" FileName="ENTITY~1.XML|EntityFramework.SqlServer.xml" Attributes="0" SourcePath="..\ExcelTest2\bin\Release\EntityFramework.SqlServer.xml" SelfReg="false" NextFile="EntityFramework.xml_1"/>
+    <ROW File="EntityFramework.dll" Component_="EntityFramework.dll" FileName="ENTITY~1.DLL|EntityFramework.dll" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\EntityFramework.dll" SelfReg="false" NextFile="EntityFramework.SqlServer.dll"/>
+    <ROW File="EntityFramework.dll_1" Component_="EntityFramework.dll_1" FileName="ENTITY~1.DLL|EntityFramework.dll" Attributes="0" SourcePath="..\ExcelTest2\bin\Release\EntityFramework.dll" SelfReg="false" NextFile="EntityFramework.SqlServer.dll_1"/>
+    <ROW File="EntityFramework.xml" Component_="EntityFramework.SqlServer.xml" FileName="ENTITY~2.XML|EntityFramework.xml" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\EntityFramework.xml" SelfReg="false" NextFile="ExcelTest2.exe"/>
+    <ROW File="EntityFramework.xml_1" Component_="EntityFramework.SqlServer.xml_1" FileName="ENTITY~2.XML|EntityFramework.xml" Attributes="0" SourcePath="..\ExcelTest2\bin\Release\EntityFramework.xml" SelfReg="false" NextFile="ExcelTest2.exe_1"/>
+    <ROW File="ExcelTest2.Form1.resources" Component_="CoreCompileInputs.cache" FileName="EXCELT~1.RES|ExcelTest2.Form1.resources" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\ExcelTest2.Form1.resources" SelfReg="false" NextFile="ExcelTest2.pdb_2"/>
+    <ROW File="ExcelTest2.Form1.resources_1" Component_="CoreCompileInputs.cache_1" FileName="EXCELT~1.RES|ExcelTest2.Form1.resources" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\ExcelTest2.Form1.resources" SelfReg="false" NextFile="ExcelTest2.pdb_3"/>
+    <ROW File="ExcelTest2.Properties.Resources.resources" Component_="CoreCompileInputs.cache" FileName="EXCELT~2.RES|ExcelTest2.Properties.Resources.resources" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\ExcelTest2.Properties.Resources.resources" SelfReg="false" NextFile="TemporaryGeneratedFile_036C0B5B148143238D208F5ADCB23D92.cs"/>
+    <ROW File="ExcelTest2.Properties.Resources.resources_1" Component_="CoreCompileInputs.cache_1" FileName="EXCELT~2.RES|ExcelTest2.Properties.Resources.resources" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\ExcelTest2.Properties.Resources.resources" SelfReg="false" NextFile="TemporaryGeneratedFile_036C0B5B148143238D208F5ADCB23D92.cs_1"/>
+    <ROW File="ExcelTest2.csproj" Component_="App.config" FileName="EXCELT~1.CSP|ExcelTest2.csproj" Attributes="0" SourcePath="..\ExcelTest2\ExcelTest2.csproj" SelfReg="false" NextFile="FebPerDiem.cs"/>
+    <ROW File="ExcelTest2.csproj.FileListAbsolute.txt" Component_="CoreCompileInputs.cache" FileName="EXCELT~1.TXT|ExcelTest2.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\ExcelTest2.csproj.FileListAbsolute.txt" SelfReg="false" NextFile="ExcelTest2.csproj.GenerateResource.Cache"/>
+    <ROW File="ExcelTest2.csproj.FileListAbsolute.txt_1" Component_="CoreCompileInputs.cache_1" FileName="EXCELT~1.TXT|ExcelTest2.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\ExcelTest2.csproj.FileListAbsolute.txt" SelfReg="false" NextFile="ExcelTest2.csproj.GenerateResource.Cache_1"/>
+    <ROW File="ExcelTest2.csproj.GenerateResource.Cache" Component_="CoreCompileInputs.cache" FileName="EXCELT~1.CAC|ExcelTest2.csproj.GenerateResource.Cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\ExcelTest2.csproj.GenerateResource.Cache" SelfReg="false" NextFile="ExcelTest2.csprojResolveAssemblyReference.cache"/>
+    <ROW File="ExcelTest2.csproj.GenerateResource.Cache_1" Component_="CoreCompileInputs.cache_1" FileName="EXCELT~1.CAC|ExcelTest2.csproj.GenerateResource.Cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\ExcelTest2.csproj.GenerateResource.Cache" SelfReg="false" NextFile="ExcelTest2.exe_3"/>
+    <ROW File="ExcelTest2.csprojResolveAssemblyReference.cache" Component_="CoreCompileInputs.cache" FileName="EXCELT~2.CAC|ExcelTest2.csprojResolveAssemblyReference.cache" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\ExcelTest2.csprojResolveAssemblyReference.cache" SelfReg="false" NextFile="ExcelTest2.exe_2"/>
+    <ROW File="ExcelTest2.exe" Component_="ExcelTest2.exe" FileName="EXCELT~1.EXE|ExcelTest2.exe" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\ExcelTest2.exe" SelfReg="false" NextFile="ExcelTest2.exe.config" DigSign="true"/>
+    <ROW File="ExcelTest2.exe.config" Component_="EntityFramework.SqlServer.xml" FileName="EXCELT~1.CON|ExcelTest2.exe.config" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\ExcelTest2.exe.config" SelfReg="false" NextFile="ExcelTest2.pdb"/>
+    <ROW File="ExcelTest2.exe.config_1" Component_="EntityFramework.SqlServer.xml_1" FileName="EXCELT~1.CON|ExcelTest2.exe.config" Attributes="0" SourcePath="..\ExcelTest2\bin\Release\ExcelTest2.exe.config" SelfReg="false" NextFile="ExcelTest2.pdb_1"/>
+    <ROW File="ExcelTest2.exe_1" Component_="ExcelTest2.exe_1" FileName="EXCELT~1.EXE|ExcelTest2.exe" Attributes="0" SourcePath="..\ExcelTest2\bin\Release\ExcelTest2.exe" SelfReg="false" NextFile="ExcelTest2.exe.config_1" DigSign="true"/>
+    <ROW File="ExcelTest2.exe_2" Component_="ExcelTest2.exe_2" FileName="EXCELT~1.EXE|ExcelTest2.exe" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\ExcelTest2.exe" SelfReg="false" NextFile="ExcelTest2.Form1.resources" DigSign="true"/>
+    <ROW File="ExcelTest2.exe_3" Component_="ExcelTest2.exe_3" FileName="EXCELT~1.EXE|ExcelTest2.exe" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\ExcelTest2.exe" SelfReg="false" NextFile="ExcelTest2.Form1.resources_1" DigSign="true"/>
+    <ROW File="ExcelTest2.pdb" Component_="ExcelTest2.exe" FileName="EXCELT~1.PDB|ExcelTest2.pdb" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\ExcelTest2.pdb" SelfReg="false" NextFile="ExcelTest2.vshost.exe"/>
+    <ROW File="ExcelTest2.pdb_1" Component_="ExcelTest2.exe_1" FileName="EXCELT~1.PDB|ExcelTest2.pdb" Attributes="0" SourcePath="..\ExcelTest2\bin\Release\ExcelTest2.pdb" SelfReg="false" NextFile="CityPerDiem.cs"/>
+    <ROW File="ExcelTest2.pdb_2" Component_="ExcelTest2.exe_2" FileName="EXCELT~1.PDB|ExcelTest2.pdb" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\ExcelTest2.pdb" SelfReg="false" NextFile="ExcelTest2.Properties.Resources.resources"/>
+    <ROW File="ExcelTest2.pdb_3" Component_="ExcelTest2.exe_3" FileName="EXCELT~1.PDB|ExcelTest2.pdb" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\ExcelTest2.pdb" SelfReg="false" NextFile="ExcelTest2.Properties.Resources.resources_1"/>
+    <ROW File="ExcelTest2.vshost.exe" Component_="ExcelTest2.vshost.exe" FileName="EXCELT~2.EXE|ExcelTest2.vshost.exe" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\ExcelTest2.vshost.exe" SelfReg="false" NextFile="ExcelTest2.vshost.exe.config" DigSign="true"/>
+    <ROW File="ExcelTest2.vshost.exe.config" Component_="EntityFramework.SqlServer.xml" FileName="EXCELT~2.CON|ExcelTest2.vshost.exe.config" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\ExcelTest2.vshost.exe.config" SelfReg="false" NextFile="ExcelTest2.vshost.exe.manifest"/>
+    <ROW File="ExcelTest2.vshost.exe.manifest" Component_="EntityFramework.SqlServer.xml" FileName="EXCELT~1.MAN|ExcelTest2.vshost.exe.manifest" Attributes="0" SourcePath="..\ExcelTest2\bin\Debug\ExcelTest2.vshost.exe.manifest" SelfReg="false" NextFile="EntityFramework.dll_1"/>
+    <ROW File="FebPerDiem.cs" Component_="App.config" FileName="FEBPER~1.CS|FebPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\FebPerDiem.cs" SelfReg="false" NextFile="Form1.cs"/>
+    <ROW File="Form1.Designer.cs" Component_="App.config" FileName="FORM1D~1.CS|Form1.Designer.cs" Attributes="0" SourcePath="..\ExcelTest2\Form1.Designer.cs" SelfReg="false" NextFile="Form1.resx"/>
+    <ROW File="Form1.cs" Component_="App.config" FileName="Form1.cs" Attributes="0" SourcePath="..\ExcelTest2\Form1.cs" SelfReg="false" NextFile="Form1.Designer.cs"/>
+    <ROW File="Form1.resx" Component_="App.config" FileName="FORM1~1.RES|Form1.resx" Attributes="0" SourcePath="..\ExcelTest2\Form1.resx" SelfReg="false" NextFile="JanPerDiem.cs"/>
+    <ROW File="JanPerDiem.cs" Component_="App.config" FileName="JANPER~1.CS|JanPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\JanPerDiem.cs" SelfReg="false" NextFile="JulPerDiem.cs"/>
+    <ROW File="JulPerDiem.cs" Component_="App.config" FileName="JULPER~1.CS|JulPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\JulPerDiem.cs" SelfReg="false" NextFile="JunPerDiem.cs"/>
+    <ROW File="JunPerDiem.cs" Component_="App.config" FileName="JUNPER~1.CS|JunPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\JunPerDiem.cs" SelfReg="false" NextFile="MarPerDiem.cs"/>
+    <ROW File="MarPerDiem.cs" Component_="App.config" FileName="MARPER~1.CS|MarPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\MarPerDiem.cs" SelfReg="false" NextFile="MayPerDiem.cs"/>
+    <ROW File="MayPerDiem.cs" Component_="App.config" FileName="MAYPER~1.CS|MayPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\MayPerDiem.cs" SelfReg="false" NextFile="Model1.Context.cs"/>
+    <ROW File="Model1.Context.cs" Component_="App.config" FileName="MODEL1~1.CS|Model1.Context.cs" Attributes="0" SourcePath="..\ExcelTest2\Model1.Context.cs" SelfReg="false" NextFile="Model1.Context.tt"/>
+    <ROW File="Model1.Context.cs.dll" Component_="Model1.Context.cs.dll" FileName="MODEL1~1.DLL|Model1.Context.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TempPE\Model1.Context.cs.dll" SelfReg="false" NextFile="Model1.cs.dll"/>
+    <ROW File="Model1.Context.cs.dll_1" Component_="Model1.Context.cs.dll_1" FileName="MODEL1~1.DLL|Model1.Context.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TempPE\Model1.Context.cs.dll" SelfReg="false" NextFile="Model1.cs.dll_1"/>
+    <ROW File="Model1.Context.tt" Component_="App.config" FileName="MODEL1~1.TT|Model1.Context.tt" Attributes="0" SourcePath="..\ExcelTest2\Model1.Context.tt" SelfReg="false" NextFile="Model1.cs"/>
+    <ROW File="Model1.Designer.cs" Component_="App.config" FileName="MODEL1~2.CS|Model1.Designer.cs" Attributes="0" SourcePath="..\ExcelTest2\Model1.Designer.cs" SelfReg="false" NextFile="Model1.edmx"/>
+    <ROW File="Model1.Designer.cs.dll" Component_="Model1.Designer.cs.dll" FileName="MODEL1~3.DLL|Model1.Designer.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TempPE\Model1.Designer.cs.dll" SelfReg="false" NextFile="CoreCompileInputs.cache_1"/>
+    <ROW File="Model1.Designer.cs.dll_1" Component_="Model1.Designer.cs.dll_1" FileName="MODEL1~3.DLL|Model1.Designer.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TempPE\Model1.Designer.cs.dll" SelfReg="false" NextFile="OctPerDiem.cs"/>
+    <ROW File="Model1.cs" Component_="App.config" FileName="Model1.cs" Attributes="0" SourcePath="..\ExcelTest2\Model1.cs" SelfReg="false" NextFile="Model1.Designer.cs"/>
+    <ROW File="Model1.cs.dll" Component_="Model1.cs.dll" FileName="MODEL1~2.DLL|Model1.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TempPE\Model1.cs.dll" SelfReg="false" NextFile="Model1.Designer.cs.dll"/>
+    <ROW File="Model1.cs.dll_1" Component_="Model1.cs.dll_1" FileName="MODEL1~2.DLL|Model1.cs.dll" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TempPE\Model1.cs.dll" SelfReg="false" NextFile="Model1.Designer.cs.dll_1"/>
+    <ROW File="Model1.csdl" Component_="AzureModel.csdl" FileName="MODEL1~1.CSD|Model1.csdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\edmxResourcesToEmbed\Model1.csdl" SelfReg="false" NextFile="Model1.msl"/>
+    <ROW File="Model1.csdl_1" Component_="AzureModel.csdl_1" FileName="MODEL1~1.CSD|Model1.csdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\edmxResourcesToEmbed\Model1.csdl" SelfReg="false" NextFile="Model1.msl_1"/>
+    <ROW File="Model1.edmx" Component_="App.config" FileName="MODEL1~1.EDM|Model1.edmx" Attributes="0" SourcePath="..\ExcelTest2\Model1.edmx" SelfReg="false" NextFile="Model1.edmx.diagram"/>
+    <ROW File="Model1.edmx.diagram" Component_="App.config" FileName="MODEL1~1.DIA|Model1.edmx.diagram" Attributes="0" SourcePath="..\ExcelTest2\Model1.edmx.diagram" SelfReg="false" NextFile="Model1.tt"/>
+    <ROW File="Model1.msl" Component_="AzureModel.csdl" FileName="Model1.msl" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\edmxResourcesToEmbed\Model1.msl" SelfReg="false" NextFile="Model1.ssdl"/>
+    <ROW File="Model1.msl_1" Component_="AzureModel.csdl_1" FileName="Model1.msl" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\edmxResourcesToEmbed\Model1.msl" SelfReg="false" NextFile="Model1.ssdl_1"/>
+    <ROW File="Model1.ssdl" Component_="AzureModel.csdl" FileName="MODEL1~1.SSD|Model1.ssdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\edmxResourcesToEmbed\Model1.ssdl" SelfReg="false" NextFile="ExcelTest2.csproj.FileListAbsolute.txt"/>
+    <ROW File="Model1.ssdl_1" Component_="AzureModel.csdl_1" FileName="MODEL1~1.SSD|Model1.ssdl" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\edmxResourcesToEmbed\Model1.ssdl" SelfReg="false" NextFile="ExcelTest2.csproj.FileListAbsolute.txt_1"/>
+    <ROW File="Model1.tt" Component_="App.config" FileName="Model1.tt" Attributes="0" SourcePath="..\ExcelTest2\Model1.tt" SelfReg="false" NextFile="Month.cs"/>
+    <ROW File="Month.cs" Component_="App.config" FileName="Month.cs" Attributes="0" SourcePath="..\ExcelTest2\Month.cs" SelfReg="false" NextFile="NovPerDiem.cs"/>
+    <ROW File="NovPerDiem.cs" Component_="App.config" FileName="NOVPER~1.CS|NovPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\NovPerDiem.cs" SelfReg="false" NextFile="CoreCompileInputs.cache"/>
+    <ROW File="OctPerDiem.cs" Component_="App.config" FileName="OCTPER~1.CS|OctPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\OctPerDiem.cs" SelfReg="false" NextFile="packages.config"/>
+    <ROW File="PreparerNote.cs" Component_="App.config" FileName="PREPAR~1.CS|PreparerNote.cs" Attributes="0" SourcePath="..\ExcelTest2\PreparerNote.cs" SelfReg="false" NextFile="Program.cs"/>
+    <ROW File="Program.cs" Component_="App.config" FileName="Program.cs" Attributes="0" SourcePath="..\ExcelTest2\Program.cs" SelfReg="false" NextFile="AssemblyInfo.cs"/>
+    <ROW File="Resources.Designer.cs" Component_="AssemblyInfo.cs" FileName="RESOUR~1.CS|Resources.Designer.cs" Attributes="0" SourcePath="..\ExcelTest2\Properties\Resources.Designer.cs" SelfReg="false" NextFile="Resources.resx"/>
+    <ROW File="Resources.resx" Component_="AssemblyInfo.cs" FileName="RESOUR~1.RES|Resources.resx" Attributes="0" SourcePath="..\ExcelTest2\Properties\Resources.resx" SelfReg="false" NextFile="Settings.Designer.cs"/>
+    <ROW File="Role.cs" Component_="App.config" FileName="Role.cs" Attributes="0" SourcePath="..\ExcelTest2\Role.cs" SelfReg="false" NextFile="SepPerDiem.cs"/>
+    <ROW File="SepPerDiem.cs" Component_="App.config" FileName="SEPPER~1.CS|SepPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\SepPerDiem.cs" SelfReg="false" NextFile="Status.cs"/>
+    <ROW File="Settings.Designer.cs" Component_="AssemblyInfo.cs" FileName="SETTIN~1.CS|Settings.Designer.cs" Attributes="0" SourcePath="..\ExcelTest2\Properties\Settings.Designer.cs" SelfReg="false" NextFile="Settings.settings"/>
+    <ROW File="Settings.settings" Component_="AssemblyInfo.cs" FileName="SETTIN~1.SET|Settings.settings" Attributes="0" SourcePath="..\ExcelTest2\Properties\Settings.settings" SelfReg="false" NextFile="Role.cs"/>
+    <ROW File="Status.cs" Component_="App.config" FileName="Status.cs" Attributes="0" SourcePath="..\ExcelTest2\Status.cs" SelfReg="false" NextFile="TaxPreparer.cs"/>
+    <ROW File="TaxPreparer.cs" Component_="App.config" FileName="TAXPRE~1.CS|TaxPreparer.cs" Attributes="0" SourcePath="..\ExcelTest2\TaxPreparer.cs" SelfReg="false" NextFile="User.cs"/>
+    <ROW File="TemporaryGeneratedFile_036C0B5B148143238D208F5ADCB23D92.cs" Component_="CoreCompileInputs.cache" FileName="TEMPOR~1.CS|TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" SelfReg="false" NextFile="TemporaryGeneratedFile_5937a6700e604077877bf7221da3dda1.cs"/>
+    <ROW File="TemporaryGeneratedFile_036C0B5B148143238D208F5ADCB23D92.cs_1" Component_="CoreCompileInputs.cache_1" FileName="TEMPOR~1.CS|TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" SelfReg="false" NextFile="TemporaryGeneratedFile_5937a6700e604077877bf7221da3dda1.cs_1"/>
+    <ROW File="TemporaryGeneratedFile_5937a6700e604077877bf7221da3dda1.cs" Component_="CoreCompileInputs.cache" FileName="TEMPOR~2.CS|TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" SelfReg="false" NextFile="TemporaryGeneratedFile_E7A71F730F8D4B9BB56E8E70B10BC5D3.cs"/>
+    <ROW File="TemporaryGeneratedFile_5937a6700e604077877bf7221da3dda1.cs_1" Component_="CoreCompileInputs.cache_1" FileName="TEMPOR~2.CS|TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" SelfReg="false" NextFile="TemporaryGeneratedFile_E7A71F730F8D4B9BB56E8E70B10BC5D3.cs_1"/>
+    <ROW File="TemporaryGeneratedFile_E7A71F730F8D4B9BB56E8E70B10BC5D3.cs" Component_="CoreCompileInputs.cache" FileName="TEMPOR~3.CS|TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" Attributes="0" SourcePath="..\ExcelTest2\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" SelfReg="false" NextFile="AzureModel.Context.cs.dll"/>
+    <ROW File="TemporaryGeneratedFile_E7A71F730F8D4B9BB56E8E70B10BC5D3.cs_1" Component_="CoreCompileInputs.cache_1" FileName="TEMPOR~3.CS|TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" Attributes="0" SourcePath="..\ExcelTest2\obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" SelfReg="false" NextFile="AzureModel.Context.cs.dll_1"/>
+    <ROW File="User.cs" Component_="App.config" FileName="User.cs" Attributes="0" SourcePath="..\ExcelTest2\User.cs" SelfReg="false" NextFile="User1099.cs"/>
+    <ROW File="User1099.cs" Component_="App.config" FileName="User1099.cs" Attributes="0" SourcePath="..\ExcelTest2\User1099.cs" SelfReg="false" NextFile="UserMiscDoc.cs"/>
+    <ROW File="UserMiscDoc.cs" Component_="App.config" FileName="USERMI~1.CS|UserMiscDoc.cs" Attributes="0" SourcePath="..\ExcelTest2\UserMiscDoc.cs" SelfReg="false" NextFile="UserPerDiem.cs"/>
+    <ROW File="UserPerDiem.cs" Component_="App.config" FileName="USERPE~1.CS|UserPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\UserPerDiem.cs" SelfReg="false" NextFile="UserToPreparer.cs"/>
+    <ROW File="UserToPreparer.cs" Component_="App.config" FileName="USERTO~1.CS|UserToPreparer.cs" Attributes="0" SourcePath="..\ExcelTest2\UserToPreparer.cs" SelfReg="false" NextFile="UserW2.cs"/>
+    <ROW File="UserW2.cs" Component_="App.config" FileName="UserW2.cs" Attributes="0" SourcePath="..\ExcelTest2\UserW2.cs" SelfReg="false" NextFile="YearPerDiem.cs"/>
+    <ROW File="YearPerDiem.cs" Component_="App.config" FileName="YEARPE~1.CS|YearPerDiem.cs" Attributes="0" SourcePath="..\ExcelTest2\YearPerDiem.cs" SelfReg="false"/>
+    <ROW File="packages.config" Component_="App.config" FileName="PACKAG~1.CON|packages.config" Attributes="0" SourcePath="..\ExcelTest2\packages.config" SelfReg="false" NextFile="PreparerNote.cs"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

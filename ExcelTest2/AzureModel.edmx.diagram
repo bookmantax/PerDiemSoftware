@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="21746e6d02ed467d911ce6e6d21aecf3" Name="Diagram1">
+        <EntityTypeShape EntityType="WorkTripModel.AprPerDiem" Width="1.5" PointX="3" PointY="21.5" />
+        <EntityTypeShape EntityType="WorkTripModel.AugPerDiem" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="WorkTripModel.CityPerDiem" Width="1.5" PointX="0.75" PointY="19" />
+        <EntityTypeShape EntityType="WorkTripModel.DecPerDiem" Width="1.5" PointX="3" PointY="24.625" />
+        <EntityTypeShape EntityType="WorkTripModel.FebPerDiem" Width="1.5" PointX="3" PointY="9" />
+        <EntityTypeShape EntityType="WorkTripModel.JanPerDiem" Width="1.5" PointX="3" PointY="33.875" />
+        <EntityTypeShape EntityType="WorkTripModel.JulPerDiem" Width="1.5" PointX="3" PointY="37" />
+        <EntityTypeShape EntityType="WorkTripModel.JunPerDiem" Width="1.5" PointX="3" PointY="12.125" />
+        <EntityTypeShape EntityType="WorkTripModel.MarPerDiem" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="WorkTripModel.MayPerDiem" Width="1.5" PointX="3" PointY="18.375" />
+        <EntityTypeShape EntityType="WorkTripModel.NovPerDiem" Width="1.5" PointX="3" PointY="30.75" />
+        <EntityTypeShape EntityType="WorkTripModel.OctPerDiem" Width="1.5" PointX="3" PointY="15.25" />
+        <EntityTypeShape EntityType="WorkTripModel.PreparerNote" Width="1.5" PointX="8" PointY="11" />
+        <EntityTypeShape EntityType="WorkTripModel.Role" Width="1.5" PointX="6.5" PointY="1.5" />
+        <EntityTypeShape EntityType="WorkTripModel.SepPerDiem" Width="1.5" PointX="3" PointY="27.75" />
+        <EntityTypeShape EntityType="WorkTripModel.Status" Width="1.5" PointX="8.75" PointY="23.625" />
+        <EntityTypeShape EntityType="WorkTripModel.TaxPreparer" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WorkTripModel.User" Width="1.5" PointX="5.75" PointY="8.125" />
+        <EntityTypeShape EntityType="WorkTripModel.User1099" Width="1.5" PointX="8" PointY="18" />
+        <EntityTypeShape EntityType="WorkTripModel.UserMiscDoc" Width="1.5" PointX="8" PointY="8.25" />
+        <EntityTypeShape EntityType="WorkTripModel.UserPerDiem" Width="1.5" PointX="8" PointY="5.25" />
+        <EntityTypeShape EntityType="WorkTripModel.UserToPreparer" Width="1.5" PointX="11" PointY="9.25" />
+        <EntityTypeShape EntityType="WorkTripModel.UserW2" Width="1.5" PointX="8" PointY="20.75" />
+        <AssociationConnector Association="WorkTripModel.FK_AprPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_AugPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_DecPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_FebPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_JanPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_JulPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_JunPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_MarPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_MayPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_NovPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_OctPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_SepPerDiem_CityPerDiem" />
+        <AssociationConnector Association="WorkTripModel.FK_PreparerNotes_TaxPreparer" />
+        <AssociationConnector Association="WorkTripModel.FK_PreparerNotes_TaxPreparer1" />
+        <AssociationConnector Association="WorkTripModel.FK_PreparerNotes_User" />
+        <AssociationConnector Association="WorkTripModel.FK_TaxPreparer_Role" />
+        <AssociationConnector Association="WorkTripModel.FK_UserToPreparer_Status" />
+        <AssociationConnector Association="WorkTripModel.FK_UserToPreparer_TaxPreparer" />
+        <AssociationConnector Association="WorkTripModel.FK_User1099_User" />
+        <AssociationConnector Association="WorkTripModel.FK_UserMiscDocs_User" />
+        <AssociationConnector Association="WorkTripModel.FK_UserPerDiem_User" />
+        <AssociationConnector Association="WorkTripModel.FK_UserToPreparer_User" />
+        <AssociationConnector Association="WorkTripModel.FK_UserW2_User" />
+        <EntityTypeShape EntityType="WorkTripModel.YearPerDiem" Width="1.5" PointX="3" PointY="41" />
+        <AssociationConnector Association="WorkTripModel.FK_YearPerDiem_CityPerDiem" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

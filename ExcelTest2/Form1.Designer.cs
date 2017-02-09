@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.shuttleFeeLabel = new System.Windows.Forms.Label();
+            this.AlternateRunButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // filePathTextBox
@@ -63,7 +64,7 @@
             // 
             // runButton
             // 
-            this.runButton.Location = new System.Drawing.Point(349, 139);
+            this.runButton.Location = new System.Drawing.Point(301, 139);
             this.runButton.Name = "runButton";
             this.runButton.Size = new System.Drawing.Size(75, 23);
             this.runButton.TabIndex = 2;
@@ -177,11 +178,22 @@
             this.shuttleFeeLabel.Size = new System.Drawing.Size(0, 13);
             this.shuttleFeeLabel.TabIndex = 34;
             // 
+            // AlternateRunButton
+            // 
+            this.AlternateRunButton.Location = new System.Drawing.Point(382, 139);
+            this.AlternateRunButton.Name = "AlternateRunButton";
+            this.AlternateRunButton.Size = new System.Drawing.Size(144, 23);
+            this.AlternateRunButton.TabIndex = 35;
+            this.AlternateRunButton.Text = "Run Full Year File";
+            this.AlternateRunButton.UseVisualStyleBackColor = true;
+            this.AlternateRunButton.Click += new System.EventHandler(this.AlternateRunButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 406);
+            this.Controls.Add(this.AlternateRunButton);
             this.Controls.Add(this.shuttleFeeLabel);
             this.Controls.Add(this.yearComboBox);
             this.Controls.Add(this.label2);
@@ -221,6 +233,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox yearComboBox;
         private System.Windows.Forms.Label shuttleFeeLabel;
+        private System.Windows.Forms.Button AlternateRunButton;
     }
 }
 

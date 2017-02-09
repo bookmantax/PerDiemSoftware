@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorkTripModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AprPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AugPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CityPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="State" Type="nvarchar" MaxLength="16" />
+    <Property Name="AirportCode" Type="nvarchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="DecPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FebPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JanPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JulPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JunPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MarPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MayPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NovPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OctPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PreparerNotes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PreparerId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="NoteCreatorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SepPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaxPreparer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="VerificationCode" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="Verified" Type="bit" Nullable="false" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="FacebookId" Type="nvarchar" MaxLength="50" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Airport" Type="nvarchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="User1099">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserMiscDocs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Month" Type="nvarchar" MaxLength="24" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Allowance" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserToPreparer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="TaxPreparerId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserW2">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="YearPerDiem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Meals" Type="int" Nullable="false" />
+    <Property Name="Lodging" Type="int" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AprPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="AprPerDiem" Type="Self.AprPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AprPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AugPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="AugPerDiem" Type="Self.AugPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AugPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DecPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="DecPerDiem" Type="Self.DecPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DecPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FebPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="FebPerDiem" Type="Self.FebPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FebPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JanPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="JanPerDiem" Type="Self.JanPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JanPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JulPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="JulPerDiem" Type="Self.JulPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JulPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JunPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="JunPerDiem" Type="Self.JunPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JunPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MarPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="MarPerDiem" Type="Self.MarPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MarPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MayPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="MayPerDiem" Type="Self.MayPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MayPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NovPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="NovPerDiem" Type="Self.NovPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NovPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OctPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="OctPerDiem" Type="Self.OctPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OctPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreparerNotes_TaxPreparer">
+    <End Role="TaxPreparer" Type="Self.TaxPreparer" Multiplicity="1" />
+    <End Role="PreparerNotes" Type="Self.PreparerNotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxPreparer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreparerNotes">
+        <PropertyRef Name="PreparerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreparerNotes_TaxPreparer1">
+    <End Role="TaxPreparer" Type="Self.TaxPreparer" Multiplicity="1" />
+    <End Role="PreparerNotes" Type="Self.PreparerNotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxPreparer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreparerNotes">
+        <PropertyRef Name="NoteCreatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreparerNotes_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="PreparerNotes" Type="Self.PreparerNotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreparerNotes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SepPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="SepPerDiem" Type="Self.SepPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SepPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxPreparer_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="TaxPreparer" Type="Self.TaxPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TaxPreparer">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User1099_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="User1099" Type="Self.User1099" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User1099">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMiscDocs_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserMiscDocs" Type="Self.UserMiscDocs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserMiscDocs">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPerDiem_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserPerDiem" Type="Self.UserPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserPerDiem">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToPreparer_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="UserToPreparer" Type="Self.UserToPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserToPreparer">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToPreparer_TaxPreparer">
+    <End Role="TaxPreparer" Type="Self.TaxPreparer" Multiplicity="1" />
+    <End Role="UserToPreparer" Type="Self.UserToPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxPreparer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserToPreparer">
+        <PropertyRef Name="TaxPreparerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToPreparer_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserToPreparer" Type="Self.UserToPreparer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserToPreparer">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserW2_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserW2" Type="Self.UserW2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserW2">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YearPerDiem_CityPerDiem">
+    <End Role="CityPerDiem" Type="Self.CityPerDiem" Multiplicity="1" />
+    <End Role="YearPerDiem" Type="Self.YearPerDiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityPerDiem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="YearPerDiem">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WorkTripModelStoreContainer">
+    <EntitySet Name="AprPerDiem" EntityType="Self.AprPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AugPerDiem" EntityType="Self.AugPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CityPerDiem" EntityType="Self.CityPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DecPerDiem" EntityType="Self.DecPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FebPerDiem" EntityType="Self.FebPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JanPerDiem" EntityType="Self.JanPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JulPerDiem" EntityType="Self.JulPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JunPerDiem" EntityType="Self.JunPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MarPerDiem" EntityType="Self.MarPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MayPerDiem" EntityType="Self.MayPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NovPerDiem" EntityType="Self.NovPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OctPerDiem" EntityType="Self.OctPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PreparerNotes" EntityType="Self.PreparerNotes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SepPerDiem" EntityType="Self.SepPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaxPreparer" EntityType="Self.TaxPreparer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User1099" EntityType="Self.User1099" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserMiscDocs" EntityType="Self.UserMiscDocs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPerDiem" EntityType="Self.UserPerDiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserToPreparer" EntityType="Self.UserToPreparer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserW2" EntityType="Self.UserW2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YearPerDiem" EntityType="Self.YearPerDiem" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AprPerDiem_CityPerDiem" Association="Self.FK_AprPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="AprPerDiem" EntitySet="AprPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AugPerDiem_CityPerDiem" Association="Self.FK_AugPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="AugPerDiem" EntitySet="AugPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DecPerDiem_CityPerDiem" Association="Self.FK_DecPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="DecPerDiem" EntitySet="DecPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FebPerDiem_CityPerDiem" Association="Self.FK_FebPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="FebPerDiem" EntitySet="FebPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JanPerDiem_CityPerDiem" Association="Self.FK_JanPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="JanPerDiem" EntitySet="JanPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JulPerDiem_CityPerDiem" Association="Self.FK_JulPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="JulPerDiem" EntitySet="JulPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JunPerDiem_CityPerDiem" Association="Self.FK_JunPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="JunPerDiem" EntitySet="JunPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MarPerDiem_CityPerDiem" Association="Self.FK_MarPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="MarPerDiem" EntitySet="MarPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MayPerDiem_CityPerDiem" Association="Self.FK_MayPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="MayPerDiem" EntitySet="MayPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NovPerDiem_CityPerDiem" Association="Self.FK_NovPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="NovPerDiem" EntitySet="NovPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OctPerDiem_CityPerDiem" Association="Self.FK_OctPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="OctPerDiem" EntitySet="OctPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreparerNotes_TaxPreparer" Association="Self.FK_PreparerNotes_TaxPreparer">
+      <End Role="TaxPreparer" EntitySet="TaxPreparer" />
+      <End Role="PreparerNotes" EntitySet="PreparerNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreparerNotes_TaxPreparer1" Association="Self.FK_PreparerNotes_TaxPreparer1">
+      <End Role="TaxPreparer" EntitySet="TaxPreparer" />
+      <End Role="PreparerNotes" EntitySet="PreparerNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreparerNotes_User" Association="Self.FK_PreparerNotes_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="PreparerNotes" EntitySet="PreparerNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SepPerDiem_CityPerDiem" Association="Self.FK_SepPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="SepPerDiem" EntitySet="SepPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxPreparer_Role" Association="Self.FK_TaxPreparer_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="TaxPreparer" EntitySet="TaxPreparer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User1099_User" Association="Self.FK_User1099_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="User1099" EntitySet="User1099" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMiscDocs_User" Association="Self.FK_UserMiscDocs_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserMiscDocs" EntitySet="UserMiscDocs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPerDiem_User" Association="Self.FK_UserPerDiem_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserPerDiem" EntitySet="UserPerDiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToPreparer_Status" Association="Self.FK_UserToPreparer_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="UserToPreparer" EntitySet="UserToPreparer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToPreparer_TaxPreparer" Association="Self.FK_UserToPreparer_TaxPreparer">
+      <End Role="TaxPreparer" EntitySet="TaxPreparer" />
+      <End Role="UserToPreparer" EntitySet="UserToPreparer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToPreparer_User" Association="Self.FK_UserToPreparer_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserToPreparer" EntitySet="UserToPreparer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserW2_User" Association="Self.FK_UserW2_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserW2" EntitySet="UserW2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YearPerDiem_CityPerDiem" Association="Self.FK_YearPerDiem_CityPerDiem">
+      <End Role="CityPerDiem" EntitySet="CityPerDiem" />
+      <End Role="YearPerDiem" EntitySet="YearPerDiem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
